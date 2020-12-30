@@ -7,8 +7,25 @@
 </head>
 <body>
 <div class="container">
-    <h1>Sample</h1>
-	<table id="results" class="table" style="display:none;">
+    <h1>Find even multiples between two numbers using a third number</h1>
+	<form name="numberFun" onsubmit="return validateItems();" 
+		  class="form-inline">
+            <div class="form-group">
+                <label for="num1">Starting Number</label>
+                <input type="number" class="form-control" id="num1">
+            </div></br>
+            <div class="form-group">
+                <label for="num2">Ending Number</label>
+                <input type="number" class="form-control" id="num2">
+            </div></br>
+			<div class="form-group">
+                <label for="num3">Step</label>
+                <input type="number" class="form-control" id="num3">
+			</div></br>
+            <button type="submit" id="submitButton" class="btn btn-default">Display Evens</button>
+    </form>
+</div>
+	<table id="results" class="table" style="display:table;">
         <thead>
             <tr>
                 <th>Even numbers between <span id="num1"></span> and <span id="num2"></span>
@@ -17,20 +34,8 @@
         </thead>
         <tbody>
             <tr>
-                <td>Addition (+)</td>
-                <td><span id="addResult"></span></td>
-            </tr>
-            <tr>
-                <td>Subtraction (-)</td>
-                <td><span id="subtractResult"></span></td>
-            </tr>
-            <tr>
-                <td>Multiplication (*)</td>
-                <td><span id="multiplyResult"></span></td>
-            </tr>
-            <tr>
-                <td>Division (/)</td>
-                <td><span id="divideResult"></span></td>
+                <td><span id="evenMultiples"></span></td>
             </tr>
         </tbody>
+</body>
 </html>

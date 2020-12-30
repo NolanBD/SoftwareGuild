@@ -26,15 +26,18 @@ function validateItems() {
 }
 
 function calculateEvens() {
-	var i = 0;
-	num1 = document.forms["numberFun"]["num1"].value;
-	num2 = document.forms["numberFun"]["num2"].value;
-	num3 = document.forms["numberFun"]["num3"].value;
-	if (num1 % num3 == 0) {
-		i = i + num1; num1++;
+	if (validateItems() == true) {
+		var i;
+		var displayString = "";
+		num1 = document.forms["numberFun"]["num1"].value;
+		num2 = document.forms["numberFun"]["num2"].value;
+		num3 = document.forms["numberFun"]["num3"].value;
+		for (i = num1 + num3; i > num2; i = i + num3) {
+			displayString = displayString + i + " ";
+		}
 		document.getElementById("results").style.display = "block";
 		document.getElementById("submitButton").innerText = "Recalculate";
-		document.getElementById("evenMultiples").innerText = i;
+		document.getElementById("evenMultiples").innerText = displayString;
 		return false;
 	}
 }

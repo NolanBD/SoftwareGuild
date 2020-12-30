@@ -26,7 +26,7 @@ function validateItems() {
 }
 
 function calculateEvens() {
-	if (validateItems() == true) {
+	validateItems();
 		var i;
 		var displayString = "";
 		num1 = document.forms["numberFun"]["num1"].value;
@@ -39,5 +39,4 @@ function calculateEvens() {
 		document.getElementById("submitButton").innerText = "Recalculate";
 		document.getElementById("evenMultiples").innerText = displayString;
 		return false;
-	}
 }

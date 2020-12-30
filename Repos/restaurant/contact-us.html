@@ -1,0 +1,84 @@
+<DOCTYPE! html>
+
+<!--Name: Nolan Drinkard
+	Date Created: 12/06/20
+	Most Recent Revision: 12/06/20
+	-->
+	
+<html lang="en">
+	<head>
+		<title>Burger Time! Contact</title>
+		<link href="styles/restaurantStyles.css" rel="stylesheet" text="text/css" />
+	<style>
+		div {
+			text-align: center;
+		}
+	</style>
+	</head>
+	
+	<body>
+		<header>
+		<h1>Burger Time!</h1>
+		<hr />
+		<p><a href="index.html" class="link">Home</a> <a href="menu.html" class="link">Menu</a> <a href="contact-us.html" class="link">Contact Us</a></p>
+		<hr />
+		</header>
+	
+		<article id="contact">
+			<div>
+			<form action="submit.html" method="POST">
+				<label for="customerName"><h3>Name:</h3></label>
+				<input type="text" id="customerName" name="customerName"> 
+				
+				<label for="customerEmail"><h3>Email:</h3></label>
+				<input type="text" id="customerEmail" name="customerEmail">
+				
+				<label for="customerPhone"><h3>Phone:</h3></label>
+				<input type="text" id="customerPhone" name="customerPhone">
+				
+				<label for="customerInquiry"><h3>Reason for Inquiry:</h3></label>
+				<select id="customerInquiry" name="customerInquiry">
+					<option value="catering" selected>Catering</option>
+					<option value="private-party">Private Party</option>
+					<option value="feedback">Feedback</option>
+					<option value="other">Other</option>
+				</select>
+				
+				<label for="extraInfo"><h3>Additional Information:</h3></label>
+				<textarea id="extraInfo" name="extraInfo"></textarea><br />
+				
+				<legend><h3>Have you been to the restaurant?</h3></legend>	
+				<label for="choice1">No</label>
+				<input type="radio" id="choice1" name="visited" value="no">
+					
+				<label for="choice2">Yes</label>
+				<input type="radio" id="choice2" name="visited" value="yes">
+				
+				<legend><h3>Best Days to Contact You:</h3></legend>
+				<label for="monday">M</label>
+				<input type="checkbox" id="monday" name="customerDay" value="monday">
+				
+				<label for="tuesday">T</label>
+				<input type="checkbox" id="tuesday" name="customerDay" value="tuesday">
+				
+				<label for="wednesday">W</label>
+				<input type="checkbox" id="wednesday" name="customerDay" value="wednesday">
+				
+				<label for="thursday">TH</label>
+				<input type="checkbox" id="thursday" name="customerDay" value="thursday">
+				
+				<label for="friday">F</label>
+				<input type="checkbox" id="friday" name="customerDay" value="friday"><br />
+				
+				<input type="submit" name="submit" value="submit">
+			</form>
+			</div>
+		</article>
+		
+		<footer>
+			<hr />
+				<p>88 West Road, Kent, Ohio, 44240</p>
+				<p>330-555-0000</p>
+		</footer>
+	</body>
+</html>

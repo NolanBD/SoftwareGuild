@@ -1,0 +1,76 @@
+<!DOCTYPE! html>
+<!--
+	Name: Nolan Drinkard
+	Date Created: 12/02/20
+	Most Recent Revison: 12/06/20
+-->
+<html lang="en">
+	<head>
+		<title>Contact Nolan</title>
+		<link href="styles/main.css" rel="stylesheet" text="text/css" />
+		<link href="styles/contact-me.css" rel="stylesheet" text="text/css" />
+	</head>
+	
+	<body>
+		<header>
+		<h1>Contact Me</hi>
+		</header>
+		<nav>
+		<p>
+			<a href="index.html">Home</a>
+		</p>
+		</nav>
+		
+		<h2>Information Request</h2>
+		<form action="submit.html" methond="POST">
+			<label for="firstName">First Name</label> <br />
+			<input type="text" id="firstName" name="firstName"> <br />
+			
+			<label for="lastName">Last Name</label> <br />
+			<input type="text" id="lastName" name="lastName"> <br />
+			
+			<label for="phone">Phone Number</label> <br />
+			<input type="text" id="phone" name="phone"> <br />
+			
+			<label for="contact">Best Time to Call:</label><br />
+			<select id="contact" name="contact">
+				<option value="default" seclected>--Select One--</option>
+				<option value="morning">9am to 12pm EST</option>
+				<option value="afternoon">12pm to 5pm EST</option>
+				<option value="evening">5pm to 9pm EST</option>
+			</select>
+			
+			<fieldset>
+				<legend>I am interested in (check all that apply)</legend>
+				
+				<input type="checkbox" id="frontEnd" name="interest" value="frontEnd">
+				<lable for="frontEnd">Front End Web Development</lable> <br />
+				
+				<input type="checkbox" id="backEnd" name="interest" value="backEnd">
+				<lable for="backEnd">Back End Web Development</label> <br />
+				
+				<input type="checkbox" id="database" name="interest" value="database">
+				<label for="database">Database Design</label> <br />
+			</fieldset>
+			
+			<fieldset>
+				<legend>I have filled in the client questionnaire form:</legend>
+				
+				<input type="radio" id="choice1" name="questionnaire" value="yes">
+				<label for="choice1">Yes</label> <br />
+				
+				<input type="radio" id="choice2" name="questionnaire" value="no">
+				<label for="choice2">No</label> <br />
+			</fieldset>
+			
+			<label for="info">Additional Information</label><br />
+			<textarea id="infor" name="info"></textarea> <br />
+			
+			<input type="submit" name="submit" value="Submit">
+		</form>
+		<footer>
+			<hr />
+			<p>&copy; Nolan Drinkard. All Rights Reserved</p>
+		</footer>
+	</body>
+</html>

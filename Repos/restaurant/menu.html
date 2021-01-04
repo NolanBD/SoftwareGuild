@@ -8,6 +8,12 @@
 <html lang="en">
 	<head>
 		<title>Burger Time! Menu</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+		<noscript>
+			<div class="error message">
+			We're sorry but our site <strong>requires</strong> JavaScript to validate the form.
+			</div>
+		</noscript>
 		<style>
 			table {
 				margin: auto;
@@ -38,14 +44,18 @@
 
 	
 	<body>
-		<header>
-		<h1>Burger Time!</h1>
-		<hr />
-		<p><a href="index.html" class="link">Home</a> <a href="menu.html" class="link">Menu</a> <a href="contact-us.html" class="link">Contact Us</a></p>
-		<hr />
-		</header>
+		<div class="container">
+			<header>
+				<h1>Burger Time!</h1>
+				<hr />
+				<nav>
+					<p><a class="btn badge-pill" href="index.html" class="link">Home</a> <a class="btn badge-pill" href="menu.html" class="link">Menu</a> <a class="btn badge-pill" href="contact-us.html" class="link">Contact Us</a></p>
+				</nav>
+				<hr />
+			</header>
 			
 		<article id="menu">
+		<div class="row justify-content-md-center">
 		<table>
 			<tr>
 				<td>
@@ -99,6 +109,7 @@
 			<tr> <td>Iced Tea</td> <td>$1.25</td>
 			</tbody>
 		</table>
+		</div>
 		</article> </br>
 		
 		<footer>
@@ -108,5 +119,6 @@
 				<p>330-555-0000</p>
 			</div>
 		</footer>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 	</body>
 </html>

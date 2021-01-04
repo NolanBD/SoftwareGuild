@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/JavaScript" src="luckySevens.js"></script>
+		
+		<style>
+		div {text-align: center;}
+		table, th, td {border: 1px solid black;}
+		</style>
+	</head>
+	<body>
+		<div class="inputContainer">
+			<h1><p>LUCKY SEVENS</p></h1>
+			<form name="game" onsubmit="rollDie()">
+				<label for="startingBet">Starting Bet</label>
+				<input type="text" id="startingBet" name="startingBet">
+				<input type="submit" id="submitButton" value="Roll!">
+			</form>
+		</div>
+		<div class="outputTable">
+			<h1><p>RESULTS</p></h1>
+			<table id="results" class="table" style="display:none;">
+				<tr>
+					<td>Starting Bet</td>
+					<td><span id="originalbet"></span></td>
+				</tr>
+				<tr>
+					<td>Total Rolls Before Going Broke</td>
+					<td><span id="totalRolls"</span></td>
+				</tr>
+				<tr>
+					<td>Highest Amount Won</td>
+					<td><span id="highestAmount"</span></td>
+				</tr>
+				<tr>
+					<td>Roll Count at Highest Amount Won</td>
+					<td><span id="highestRoll"</span></td>
+				</tr>
+			</table>	
+	</body>
+</html>

@@ -1,0 +1,98 @@
+<DOCTYPE! html>
+
+<!--Name: Nolan Drinkard
+	Date Created: 12/06/20
+	Most Recent Revision: 12/06/20
+	-->
+	
+<html lang="en">
+	<head>
+		<title>Burger Time! Contact</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+		<link href="styles/restaurantStyles.css" rel="stylesheet" text="text/css" />
+		<noscript>
+			<div class="error message">
+			We're sorry but our site <strong>requires</strong> JavaScript to validate the form.
+			</div>
+		</noscript>
+	<style>
+		div {
+			text-align: center;
+		}
+	</style>
+	</head>
+	
+	<body>
+		<header>
+		<h1>Burger Time!</h1>
+		<hr />
+		<nav>
+			<p><a class="btn badge-pill" href="index.html" class="link">Home</a> <a class="btn badge-pill" href="menu.html" class="link">Menu</a> <a class="btn badge-pill" href="contact-us.html" class="link">Contact Us</a></p>		
+		</nav>
+		<hr />
+		</header>
+	
+		<div class="container">
+		<article id="contact">
+			<div class="row justify-content-md-center">
+			<form name="mainForm" onSubmit="confirmInfo()">
+				<label for="customerName"><h3>Name:</h3></label>
+				<input type="text" id="customerName" name="customerName" class="form-control"> <br>
+				
+				<label for="customerEmail"><h3>Email:</h3></label>
+				<input type="text" id="customerEmail" name="customerEmail" class="form-control"> <br>
+				
+				<label for="customerPhone"><h3>Phone:</h3></label>
+				<input type="text" id="customerPhone" name="customerPhone" class="form-control"> <br>
+				
+				<label for="customerInquiry"><h3>Reason for Inquiry:</h3></label>
+				<select id="customerInquiry" name="customerInquiry" class="form-control">
+					<option value="catering" selected>Catering</option>
+					<option value="private-party">Private Party</option>
+					<option value="feedback">Feedback</option>
+					<option value="other">Other</option>
+				</select>
+				
+				<br><label for="extraInfo"><h3>Additional Information:</h3></label>
+				<textarea id="extraInfo" name="extraInfo" class="form-control"></textarea><br>
+				
+				<div class="form-check">
+					<legend><h3>Have you been to the restaurant?</h3></legend>	
+					<label for="choice1"><h5>NO</h5></label>
+					<input type="radio" id="choice1" name="visited" value="no">
+					
+					<label for="choice2"><h5>YES</h5></label>
+					<input type="radio" id="choice2" name="visited" value="yes"><br>
+				</div>
+				<div class="form-check">
+					<legend><h3>Best Days to Contact You:</h3></legend>
+					<label for="monday"><h5>M</h5></label>
+					<input type="checkbox" id="monday" name="customerDay" value="monday">
+				
+					<label for="tuesday"><h5>T</h5></label>
+					<input type="checkbox" id="tuesday" name="customerDay" value="tuesday">
+				
+					<label for="wednesday"><h5>W</h5></label>
+					<input type="checkbox" id="wednesday" name="customerDay" value="wednesday">
+				
+					<label for="thursday"><h5>TH</h5></label>
+					<input type="checkbox" id="thursday" name="customerDay" value="thursday">
+				
+					<label for="friday"><h5>F</h5></label>
+					<input type="checkbox" id="friday" name="customerDay" value="friday"><br />
+				</div>
+				
+				<button type="submit" id="submitButton" class="btn btn-default">Submit</button>
+			</form>
+			</div>
+		</article>
+		</div>
+		<footer>
+			<hr />
+				<p>88 West Road, Kent, Ohio, 44240</p>
+				<p>330-555-0000</p>
+		</footer>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+		<script type="text/JavaScript" src="scripts/menuConfirm.js"></script>
+	</body>
+</html>

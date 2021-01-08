@@ -2,18 +2,23 @@
 
 <!--Name: Nolan Drinkard
 	Date Created: 12/06/20
-	Most Recent Revision: 12/06/20
+	Most Recent Revision: 01/07/21
 	-->
 	
 <html lang="en">
 	<head>
 		<title>Burger Time! Menu</title>
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+		<!-- Error Message denoting need for JavaScript -->
 		<noscript>
 			<div class="error message">
 			We're sorry but our site <strong>requires</strong> JavaScript to validate the form.
 			</div>
 		</noscript>
+		<!-- External style sheets -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+		<link href="styles/restaurantStyles.css" rel="stylesheet" text="text/css" />
+		<!-- Internal style sheet -->
 		<style>
 			table {
 				margin: auto;
@@ -39,64 +44,78 @@
 				background-color: lightgray;
 			}
 		</style>
-		<link href="styles/restaurantStyles.css" rel="stylesheet" text="text/css" />
 	</head>
 
 	
 	<body>
-		<div class="container">
 			<header>
 				<h1>Burger Time!</h1>
 				<hr />
 				<nav>
-					<p><a class="btn badge-pill" href="index.html" class="link">Home</a> <a class="btn badge-pill" href="menu.html" class="link">Menu</a> <a class="btn badge-pill" href="contact-us.html" class="link">Contact Us</a></p>
+					<p><a class="btn badge-pill" href="index.html" class="link">Home <i class="fas fa-home"></i></a> <a class="btn badge-pill" href="menu.html" class="link">Menu</a> <a class="btn badge-pill" href="contact-us.html" class="link">Contact Us</a></p>
 				</nav>
 				<hr />
 			</header>
 			
 		<article id="menu">
-		<div class="row justify-content-md-center">
-		<table>
-			<tr>
-				<td>
-					<p><h3>Burger and Fries</h3></p>
-					<p>Your choice - with or without cheese, pickle, onion, tomato, and lettuce.</p>
-					<p>Served with thick cut french fries</p>
-					<p><h3>$7.95</h3></p>
-				</td>
-				<td>
-					<p><h3>Hot Dog and Chips</h3></p>
-					<p>Your choice - white or wheat but, relish, mustad, and ketchup</p>
-					<p>Served with our house-made chips</p>
-					<p><h3>$7.95</h3></p>
-				</td>
-				<td>
-					<p><h3>Burger in a Burger</h3></p>
-					<p>We make a burger and put it in another buger</p>
-					<p>Served with another burger in a burger</p>
-					<p><h3>Market Price</h3><p>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<p><h3>Big Bun</h3><p>
-					<p>Enormous bun, no burger</p>
-					<p>Served with nothing</p>
-					<p><h3>$111</h3></p>
-				</td>
-				<td>
-					<p><h3>Bigger Bun Small Burger</h3></p>
-					<p>A bun the size of your table, very littler burger</p>
-					<p>Complimentary Napkin</p>
-					<p><h3>$2</h3></p>
-				</td>
-				<td>
-					<P><h3>Don't Ask For This</h3></p>
-					<p>The server will throw you out if you ask for this</p>
-					<p>seriously</p>
-					<p><h3>free i guess</h3></p>
-				</td>
-			</tr>
+		<div class="container">
+			<table>
+			<div class="row">
+				<tr>
+					<div class="col-sm">
+					<td>
+						<p><h3>Burger and Fries</h3></p>
+						<p>Your choice - with or without cheese, pickle, onion, tomato, and lettuce.</p>
+						<p>Served with thick cut french fries</p>
+						<p><h3>$7.95</h3></p>
+					</td>
+					</div>
+					<div class="col-sm">
+					<td>
+						<p><h3>Hot Dog and Chips</h3></p>
+						<p>Your choice - white or wheat but, relish, mustad, and ketchup</p>
+						<p>Served with our house-made chips</p>
+						<p><h3>$7.95</h3></p>
+					</td>
+					</div>
+					<div class="col-sm">
+					<td>
+						<p><h3>Burger in a Burger</h3></p>
+						<p>We make a burger and put it in another buger</p>
+						<p>Served with another burger in a burger</p>
+						<p><h3>Market Price</h3><p>
+					</td>
+					</div>
+				</tr>
+			</div>
+			<div class="row">
+				<tr>
+					<div class="col-sm">
+						<td>
+							<p><h3>Big Bun</h3><p>
+							<p>Enormous bun, no burger</p>
+							<p>Served with nothing</p>
+							<p><h3>$111</h3></p>
+						</td>
+					</div>
+					<div class="col-sm">
+						<td>
+							<p><h3>Bigger Bun Small Burger</h3></p>
+							<p>A bun the size of your table, very littler burger</p>
+							<p>Complimentary Napkin</p>
+							<p><h3>$2</h3></p>
+						</td>
+					</div>
+					<div class="col-sm">
+						<td>
+							<P><h3>Don't Ask For This</h3></p>
+							<p>The server will throw you out if you ask for this</p>
+							<p>seriously</p>
+							<p><h3>free i guess</h3></p>
+						</td>
+					</div>
+				</tr>
+			</div>
 		</table>
 		<table>
 			<thead>
@@ -119,6 +138,7 @@
 				<p>330-555-0000</p>
 			</div>
 		</footer>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+		<!-- external link to the javascript required for bootstrap -->
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
 	</body>
 </html>

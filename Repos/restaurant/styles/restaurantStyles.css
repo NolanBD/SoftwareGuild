@@ -7,6 +7,7 @@ header, footer {
 	background-color: #d4793a;
 	color: #228b22
 	height: 100px;
+	width: auto;
 	text-align: center;
 	padding: 30px 10px 20px 10px;
 }
@@ -19,15 +20,29 @@ body {
 	background-color: #026775
 }
 
-.link:hover {
-		font-weight:bold;
+.btn:hover {
+	font-weight: bold;
 }
 
-.link:visited {
+.btn:visited {
 		color: red;
 		text-decoration: underline;
 }
 
 .link:link {
 	text-decoration: none;
+}
+
+form .btn {
+	background-color: purple;
+}
+
+nav .btn {
+    background-color: #5b7d87;
+    color: #fef9ff; 
+}
+
+.jumbotron {
+	background-color: #d4793a;
+	color: #228b22
 }

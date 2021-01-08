@@ -2,14 +2,17 @@
 
 <!--Name: Nolan Drinkard
 	Date Created: 12/06/20
-	Most Recent Revision: 12/06/20
+	Most Recent Revision: 01/07/21
 	-->
 	
 <html lang="en">
 	<head>
+	<!-- External style sheets -->
 		<title>Burger Time! Contact</title>
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 		<link href="styles/restaurantStyles.css" rel="stylesheet" text="text/css" />
+		<!-- Error Message denoting need for JavaScript -->
 		<noscript>
 			<div class="error message">
 			We're sorry but our site <strong>requires</strong> JavaScript to validate the form.
@@ -27,23 +30,25 @@
 		<h1>Burger Time!</h1>
 		<hr />
 		<nav>
-			<p><a class="btn badge-pill" href="index.html" class="link">Home</a> <a class="btn badge-pill" href="menu.html" class="link">Menu</a> <a class="btn badge-pill" href="contact-us.html" class="link">Contact Us</a></p>		
+			<p><a class="btn badge-pill" href="index.html" class="link">Home <i class="fas fa-home"></i></a> <a class="btn badge-pill" href="menu.html" class="link">Menu</a> <a class="btn badge-pill" href="contact-us.html" class="link">Contact Us</a></p>		
 		</nav>
 		<hr />
 		</header>
-	
+		
+		<!-- this div puts everything inside into a bootstrap container -->
 		<div class="container">
 		<article id="contact">
+			<!-- this div and makes sure the content inside is displayed as centered -->
 			<div class="row justify-content-md-center">
 			<form name="mainForm" onSubmit="confirmInfo()">
 				<label for="customerName"><h3>Name:</h3></label>
-				<input type="text" id="customerName" name="customerName" class="form-control"> <br>
+				<input type="text" id="customerName" name="customerName" class="form-control" placeholder="Name"> <br>
 				
 				<label for="customerEmail"><h3>Email:</h3></label>
-				<input type="text" id="customerEmail" name="customerEmail" class="form-control"> <br>
+				<input type="text" id="customerEmail" name="customerEmail" class="form-control" placeholder="Email"> <br>
 				
 				<label for="customerPhone"><h3>Phone:</h3></label>
-				<input type="text" id="customerPhone" name="customerPhone" class="form-control"> <br>
+				<input type="text" id="customerPhone" name="customerPhone" class="form-control" placeholder="Phone Number"> <br>
 				
 				<label for="customerInquiry"><h3>Reason for Inquiry:</h3></label>
 				<select id="customerInquiry" name="customerInquiry" class="form-control">
@@ -92,7 +97,8 @@
 				<p>88 West Road, Kent, Ohio, 44240</p>
 				<p>330-555-0000</p>
 		</footer>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+		<!-- external link to the javascript required for bootstrap and our JS for the menu confirmation-->
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
 		<script type="text/JavaScript" src="scripts/menuConfirm.js"></script>
 	</body>
 </html>

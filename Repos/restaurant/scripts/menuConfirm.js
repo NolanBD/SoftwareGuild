@@ -1,4 +1,4 @@
-function confrimInfo() {
+function confirmInfo() {
 	//* naming variables// 
 	var name = document.forms["mainForm"]["customerName"].value;
 	var email = document.forms["mainForm"]["customerEmail"].value;
@@ -8,7 +8,7 @@ function confrimInfo() {
 	var phoneChars = /^[0-9]{10}$/g;
 	
 	//* comparing the value of customerName against the value of the array containing all alphabetical characters//
-	if (name = " " || !name.value.match(letters)) {
+	if (name = " " || !letters.value.match(name)) {
 		alert("Please enter a valid name, alphabetical only!");
 		document.getElementById("customerName").focus();
 		return false;		
